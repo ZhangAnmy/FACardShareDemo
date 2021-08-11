@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DependentLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:background_element="#FFFFFF"
+    ohos:remote="true">
+
+    <DirectionalLayout
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:orientation="vertical">
+
+        <Text
+            ohos:id="$+id:title"
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:text_alignment="horizontal_center"
+            ohos:margin="10fp"
+            ohos:text="Anmy Show"
+            ohos:text_font="sans-serif-medium"
+            ohos:text_size="15fp"/>
+
+        <Image
+            ohos:height="80fp"
+            ohos:width="100fp"
+            ohos:top_margin="5px"
+            ohos:left_margin="50px"
+            ohos:below="$id:title"
+            ohos:image_src="$media:academy">
+        </Image>
+
+        <Text
+            ohos:id="$+id:description"
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:text_alignment="horizontal_center"
+            ohos:margin="5fp"
+            ohos:text="This is a demo"
+            ohos:text_font="sans-serif-medium"
+            ohos:left_margin="50px"
+            ohos:text_size="10fp"/>
+    </DirectionalLayout>
+
+</DependentLayout>

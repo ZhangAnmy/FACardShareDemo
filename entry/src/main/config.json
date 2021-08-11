@@ -1,0 +1,85 @@
+{
+  "app": {
+    "bundleName": "com.huawei.anmy",
+    "vendor": "huawei",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    }
+  },
+  "deviceConfig": {"default": {
+    "keepAlive": true
+  }},
+  "module": {
+    "package": "com.huawei.facardsharedemo",
+    "name": ".MyApplication",
+    "mainAbility": "com.huawei.facardsharedemo.MainAbility",
+    "deviceType": [
+      "phone",
+      "tablet",
+      "wearable"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry",
+      "installationFree": false
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "orientation": "unspecified",
+        "name": "com.huawei.facardsharedemo.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "$string:entry_MainAbility",
+        "type": "page",
+        "launchType": "singleton",
+        "formsEnabled": true,
+        "visible": true,
+        "forms": [
+          {
+            "landscapeLayouts": [
+              "$layout:form_image_with_info_date_card_2_2",
+              "$layout:form_image_with_info_date_card_2_4"
+            ],
+            "isDefault": true,
+            "scheduledUpdateTime": "10:30",
+            "defaultDimension": "2*2",
+            "name": "AnmyCard",
+            "description": "This is Anmy's widget",
+            "colorMode": "auto",
+            "type": "Java",
+            "supportDimensions": [
+              "2*2",
+              "2*4"
+            ],
+            "portraitLayouts": [
+              "$layout:form_image_with_info_date_card_2_2",
+              "$layout:form_image_with_info_date_card_2_4"
+            ],
+            "updateEnabled": true,
+            "updateDuration": 30,
+            "formVisibleNotify": true,
+            "metaData": {
+              "customizeData": [
+                {
+                  "name": "needBlurBackgroundForLauncher",
+                  "value": "true"
+                }
+              ]
+            }
+          }
+        ]}
+    ]
+  }
+}

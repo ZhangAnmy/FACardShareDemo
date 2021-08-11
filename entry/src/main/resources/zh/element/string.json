@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "entry_MainAbility",
+      "value": "AnmyFADemo"
+    },
+    {
+      "name": "mainability_description",
+      "value": "Anmy's FA Demo"
+    },
+    {
+      "name": "mainability_HelloWorld",
+      "value": "你好，Anmy"
+    }
+  ]
+}
